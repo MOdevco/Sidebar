@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { calendar, chart, chartFill, chat, file, search, setting, user } from "./assets"
+import { calendar, chart, chartFill, chat, controls, file, logo, search, setting, user } from "./assets"
 import Items from "./components/items/items"
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
     
     <div className="flex">
       <div className={`${open ? 'w-72' : 'w-[110px]'} flex flex-col gap-10 duration-300 h-screen p-5 pt-8 bg-dark-purple relative`}>
-        <img src="./src/assets/control.png" onClick={() => setOpen(!open)} className={` absolute cursor-pointer rounded-full -right-3 top-9 border-2 border-dark-purple ${!open && 'rotate-[180deg]'}` } alt="" />
+        <img src={controls} onClick={() => setOpen(!open)} className={` absolute cursor-pointer rounded-full -right-3 top-9 border-2 border-dark-purple ${!open && 'rotate-[180deg]'}` } alt="" />
 
         <div className="flex gap-x-4 items-center">
-          <img src="./src/assets/logo.png" className={` cursor-pointer duration-500 ${open && "rotate-[360deg]"}`} alt="" />
+          <img src={logo} className={` cursor-pointer duration-500 ${open && "rotate-[360deg]"}`} alt="" />
           <h1 className={`text-[white] origin-left font-medium text-xl duration-300 ${!open && 'scale-0'}`}> <span className="text-[red]">MO</span>devco</h1>
         </div>
 

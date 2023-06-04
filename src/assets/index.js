@@ -6,7 +6,9 @@ import search from './Search.png'
 import chart from './Chart.png'
 import file from './Folder.png'
 import setting from './Setting.png'
+import logo from './logo.png'
+import controls from './control.png'
 
 
 
-export { chartFill , chat ,user,calendar,search,chart,file,setting}
+export { chartFill , chat ,user,calendar,search,chart,file,setting,logo,controls}
